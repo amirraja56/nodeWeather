@@ -5,7 +5,7 @@ const path = require('path');
 const Port =process.env.PORT || 3006;
 
 const views=path.join(__dirname,"./views");
-console.log(views);
+// console.log(views);
 
 app.set('view engine', 'hbs');
 app.set('views',views);
