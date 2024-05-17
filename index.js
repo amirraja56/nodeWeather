@@ -4,7 +4,11 @@ const axios = require('axios');
 const path = require('path');
 const Port =process.env.PORT || 3006;
 
+const views=path.join(__dirname,"./views");
+console.log(views);
+
 app.set('view engine', 'hbs');
+app.set('views',views);
 // app.use(express.static(path.join(__dirname,'./public')));
 
 app.get('/', (req, res) => {
